@@ -5,29 +5,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Click Lemur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      width: 200px;
-      height: 100px;
-      font-family: Arial, sans-serif;
-      padding: 10px;
+      width: 250px;
+      height: 220px;
+      font-family: 'Poppins', sans-serif;
+      padding: 15px;
       margin: 0;
       text-align: center;
+      background: linear-gradient(135deg, #ffe5e5, #f0f4f8);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      font-weight: 500;
+      background: linear-gradient(45deg, #e53935, #000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h4 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      color: #78909c;
+      margin: 8px 0;
+      font-weight: 400;
     }
 
     p {
       font-size: 14px;
-      margin: 10px 0;
+      color: #455a64;
+      margin: 8px 0;
+    }
+
+    p strong {
+      color: #e53935;
+    }
+
+    .signature {
+      font-size: 12px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .signature a {
+      color: #e53935;
+      text-decoration: none;
+    }
+
+    .signature a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
   <div>
-    <h1> ClickLemur</h1>
-    <h4> Enhance your Lemur Experience</h4>
+    <img src="/icons/icon-16.png" alt="Click Lemur Logo" class="logo">
+    <h1>ClickLemur</h1>
+    <h4>Enhance your Lemur Experience</h4>
     <p><strong>CTRL + '</strong>: Run</p>
     <p><strong>CTRL + Enter</strong>: Submit</p>
+    <div class="signature">
+      Built by <a href="https://github.com/codexdebayan" target="_blank">CodexDebayan</a>
+    </div>
   </div>
 </body>
 
