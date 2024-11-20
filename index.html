@@ -5,100 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Clicklemur</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some basic styles */
+        * {
             margin: 0;
             padding: 0;
-            background: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
+            box-sizing: border-box;
         }
 
-        header, footer {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        /* Navbar Styles */
+        header {
             background: linear-gradient(90deg, red, black);
             color: white;
-            padding: 1.5rem 0;
+            padding: 1rem;
             text-align: center;
+            height: 60px; /* Reduced height */
         }
 
         header h1 {
+            font-size: 1.8rem;
             margin: 0;
-            font-size: 2.5rem;
         }
 
         header p {
-            margin: 0.5rem 0 0;
             font-size: 1rem;
+            margin: 0.5rem 0 0;
         }
 
+        /* Main Content Area */
         main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
+            flex: 1;
+            max-width: 900px;
+            margin: 20px auto;
             background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            overflow-y: auto;
         }
 
         h2 {
             color: red;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
         }
 
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.8;
         }
 
+        /* Footer Styles */
         footer {
-            text-align: center;
-            padding: 1rem 0;
             background: linear-gradient(90deg, red, black);
+            color: white;
+            text-align: center;
+            padding: 1rem;
         }
 
         footer p {
+            font-size: 0.9rem;
             margin: 0;
         }
 
         footer a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
         }
 
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            main {
+                margin: 10px;
+                padding: 1.5rem;
+            }
+
+            footer p {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Privacy Policy</h1>
         <p>Effective Date: 20th November 2024</p>
     </header>
+
     <main>
         <h2>Introduction</h2>
         <p>
             Thank you for using Clicklemur! Your privacy is important to us. This policy explains how we handle your information.
         </p>
+
         <h2>Data Collection</h2>
         <p>
             Clicklemur does not collect, store, or transmit any user data. The extension operates entirely on your local device 
             and does not interact with external servers or services.
         </p>
+
         <h2>Third-Party Services</h2>
         <p>
             This extension does not utilize or integrate with any third-party services that collect or process data.
         </p>
+
         <h2>Updates to this Policy</h2>
         <p>
             We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date.
         </p>
+
         <h2>Contact Us</h2>
         <p>
             If you have any questions or concerns about this Privacy Policy, please contact us at <strong>codexedebayan@gmail.com</strong>.
         </p>
     </main>
+
     <footer>
         <p>&copy; 2024 Clicklemur | <a href="#">Terms of Service</a></p>
     </footer>
+
 </body>
 </html>
