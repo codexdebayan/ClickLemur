@@ -34,16 +34,6 @@
 
         header h1 {
             font-size: 1.8rem;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1rem;
-            margin: 0.5rem 0 0;
-            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
-            display: inline-block; /* Ensures it doesn't stretch to full width */
-            padding: 0.2rem 0.5rem; /* Adds spacing around text */
-            border-radius: 5px; /* Rounded corners */
         }
 
         /* Main Content Area */
@@ -56,6 +46,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow-y: auto;
+            position: relative; /* Enable positioning for child elements */
         }
 
         h2 {
@@ -70,6 +61,18 @@
             line-height: 1.8;
         }
 
+        .effective-date {
+            position: absolute; /* Position it absolutely within main */
+            bottom: 20px; /* Distance from bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust for centering */
+            font-size: 1rem; /* Font size for effective date */
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            color: white; /* Text color */
+            padding: 0.2rem 0.5rem; /* Padding around text */
+            border-radius: 5px; /* Rounded corners */
+        }
+
         /* Footer Styles */
         footer {
             background: linear-gradient(90deg, red, black);
@@ -80,7 +83,6 @@
 
         footer p {
             font-size: 0.9rem;
-            margin: 0;
         }
 
         footer a {
@@ -99,30 +101,25 @@
                 font-size: 1.5rem;
             }
 
-            header p {
-                font-size: 0.9rem;
-            }
+           h2 {
+               font-size: 1.3rem;
+           }
 
-            h2 {
-                font-size: 1.3rem;
-            }
+           main {
+               margin: 10px;
+               padding: 1.5rem;
+           }
 
-            main {
-                margin: 10px;
-                padding: 1.5rem;
-            }
-
-            footer p {
-                font-size: 0.8rem;
-            }
-        }
+           footer p {
+               font-size: 0.8rem;
+           }
+       }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Privacy Policy</h1>
-        <p>Effective Date: 20th November 2024</p>
     </header>
 
     <main>
@@ -133,29 +130,31 @@
 
         <h2>Data Collection</h2>
         <p>
-            Clicklemur does not collect, store, or transmit any user data. The extension operates entirely on your local device 
-            and does not interact with external servers or services.
-        </p>
+             Clicklemur does not collect, store, or transmit any user data. The extension operates entirely on your local device 
+             and does not interact with external servers or services.
+         </p>
 
-        <h2>Third-Party Services</h2>
-        <p>
-            This extension does not utilize or integrate with any third-party services that collect or process data.
-        </p>
+         <h2>Third-Party Services</h2>
+         <p>
+             This extension does not utilize or integrate with any third-party services that collect or process data.
+         </p>
 
-        <h2>Updates to this Policy</h2>
-        <p>
-            We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date.
-        </p>
+         <h2>Updates to this Policy</h2>
+         <p>
+             We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date.
+         </p>
 
-        <h2>Contact Us</h2>
-        <p>
-            If you have any questions or concerns about this Privacy Policy, please contact us at <strong>codexedebayan@gmail.com</strong>.
-        </p>
-    </main>
+         <h2>Contact Us</h2>
+         <p>
+             If you have any questions or concerns about this Privacy Policy, please contact us at <strong>codexedebayan@gmail.com</strong>.
+         </p>
 
-    <footer>
-        <p>&copy; 2024 Clicklemur | <a href="#">Terms of Service</a></p>
-    </footer>
+         
+     </main>
+
+     <footer>
+         <p>&copy; 2024 Clicklemur | Effective Date: 20th November 2024</p>
+     </footer>
 
 </body>
 </html>
